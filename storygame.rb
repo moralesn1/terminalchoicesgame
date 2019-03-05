@@ -21,7 +21,6 @@ def storygame
             section2 = true
             rungame = true
             break
-        system "clear"
         when userinput == 2
             puts "She thinks you were looking at her chest and she slaps you. You get kicked out. Game over "
             puts "Would you like to try again? Type 1 to restart or 2 to quit."
@@ -42,8 +41,11 @@ def storygame
         end
     end
 
-    system "clear"
+system "clear"
+
     while section2
+
+
     puts "She looks back at you and smiles."
     puts "Do you smile back at her in the same pattern?(1)"
     puts "Or do you walk straight towards her.(2)"
@@ -61,19 +63,24 @@ def storygame
                 case
                 when input == 1
                     rungame = true
+
                 when input == 2
                     rungame = false
+
                 else
                     rungame = false
                 end
-
+            system "clear"
             section2 = false      
         else
             puts "Invalid selection."
             rungame = true
         end
     end
+
 system "clear"
+
+
     while section3
     puts "You walk towards her and approach her. Her attention is now focused on you."
     puts "Do you:"
@@ -88,13 +95,27 @@ system "clear"
         when userinput == 2
             puts "She is taken back a bit and points you the toilet next to her. What a dumb question."
             puts "Game over"
-            section3 = false
-            rungame
+            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+                input = gets.chomp.to_i
+                case
+                when input == 1
+                    rungame
+                when input == 2
+                    rungame = false
+                else
+                    rungame = false
+                end
+        system "clear"
+        section2 = false  
+            system "clear"
+            section2 = false      
         else
             puts "Invalid selection."
             rungame = true
         end
     end
+
+system "clear"
 
     while section4
         puts "For step 3, you are given a choice of 1 or 2."
