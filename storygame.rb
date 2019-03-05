@@ -1,43 +1,39 @@
-puts "Hello"
-game = true
 
-puts "You are given a choice. Type 1 or 2 to go for the choice."
-choice = gets.chomp.to_i
 
-if choice == 1 
-    p "Proceed"
-    game = true
+def storygame
+
+    rungame = true
     
-elsif choice == 2
-    p "you lose"
-    game = false
+    puts "Welcome to the game "
+    puts "For step 1. You are given a choice. 1 or 2."
+    userinput = gets.chomp.to_i
+        case
+        when userinput == 1
+            puts "Correct, please proceed."
+        when userinput == 2
+            puts "Incorrect. Game over"
+            rungame = false
+        else
+            puts "Invalid selection."
+            rungame = true
+        end
 
-elsif choice == 3
-    puts "Goodbye"
-    game = false
-else 
-    puts "Invalid Selection: Please type 1, 2 or 3 to quit"
+    puts "For step 2. You are given a choice 1 or 2"
+    userinput = gets.chomp.to_i
+        case
+        when userinput == 1
+            puts "Correct, please proceed."
+        when userinput == 2
+            puts "Incorrect. Game over"
+            rungame = false
+        else
+            puts "Invalid selection."
+            rungame = true
+        end
 end
 
-system "clear"
+storygame
 
-
-puts "You are given a choice. Type 1 or 2 to go for the choice."
-choice = gets.chomp.to_i
-
-if choice == 1 
-    p "Proceed"
-    game = true
-    
-elsif choice == 2
-    p "you lose"
-    game = false
-elsif choice == 3
-    puts "Goodbye"
-    game = false
-else 
-    puts "Invalid Selection: Please type 1, 2 or 3 to quit"
-end
-
+#comment
 
 
