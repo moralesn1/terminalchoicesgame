@@ -16,9 +16,13 @@ def storygame
     puts ""
     puts ""
     puts "NEXT?"
-    puts "Do you try to make eye contact with her (1)"
+    puts "Do you.."
+    puts ""
+    puts "(1). Make eye contact with her?"
+    puts ""
     puts "OR"
-    puts "Do you stare at her body? (2)"
+    puts ""
+    puts "(2). Stare at her body?"
     # puts "Type 1 for choice one or type 2 for choice 2"
     userinput = gets.chomp.to_i
         case
@@ -49,14 +53,18 @@ system "clear"
 
     while section2
 
-    puts "You make eye contact with her. She thinks her clothes are nice"
+    puts "You make eye contact with her."
     puts "She looks back at you and smiles."
     puts ""
     puts ""
     puts "NEXT?"
-    puts "Do you smile back at her in the same pattern?(1)"
+    puts "Do you.."
+    puts ""
+    puts "(1). Walk towards her with super confidence?."
+    puts ""
     puts "OR"
-    puts "Do you walk straight towards her.(2)"
+    puts ""
+    puts "(2). Smile back at her with super confidence?."
     userinput = gets.chomp.to_i
         case
         when userinput == 1
@@ -73,9 +81,6 @@ system "clear"
 
                 when input == 2
                     exit = rungame = false, section2 = false, title = false
-                    # rungame = false
-                    # section1 = false
-                    # title = false
 
                 else
                     rungame = false
@@ -117,9 +122,6 @@ system "clear"
 
                 when input == 2
                     exit = rungame = false, section3 = false, title = false
-                    # rungame = false
-                    # section1 = false
-                    # title = false
 
                 else
                     rungame = false
@@ -303,3 +305,4 @@ end
 end
 
 storygame
+
