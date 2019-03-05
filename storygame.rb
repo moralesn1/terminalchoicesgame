@@ -1,5 +1,4 @@
 
-
 def storygame
 
     rungame = true
@@ -11,7 +10,7 @@ def storygame
 
     while section1 
 
-    puts "You see a girl at the bar that peaks your interests and gets your testosterone up."
+    puts "You see a girl at the bar that peaks your interests and gets your testosterone up. So Do something!"
     puts "Do you try to make eye contact with her (1) OR Do you stare at her body? (2)"
     puts "Type 1 for choice one or type 2 for choice 2"
     userinput = gets.chomp.to_i
@@ -62,7 +61,7 @@ def storygame
                 when input == 1
                     rungame = true
                 when input == 2
-                    rungame = false
+                    rungame = falsey
                 else
                     rungame = false
                 end
