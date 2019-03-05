@@ -27,13 +27,23 @@ def storygame
     userinput = gets.chomp.to_i
         case
         when userinput == 1
-            puts "She thinks her clothes are nice so she looks at you back and smiles"
             section2 = true
             rungame = true
             break
         when userinput == 2
-            puts "She thinks you were looking at her chest and she slaps you. You get kicked out. Game over "
-            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+            system "Clear"
+            puts ""
+            puts "GAME OVER!"
+            puts ""
+            puts ""
+            puts "She thinks you were looking at her chest and she slaps you. You get kicked out. "
+            puts ""
+            puts ""
+            puts "" 
+            puts ""
+            puts ""
+            puts "Try again?" "(1) Restart" "(2) Quit."
+            
             input = gets.chomp.to_i
                 case
                 when input == 1
@@ -68,12 +78,15 @@ system "clear"
     userinput = gets.chomp.to_i
         case
         when userinput == 1
-            puts "You walk straight over towards her."
             section3 = true
             break
         when userinput == 2
-            puts "You smiled back at her in the same pattern, she loses interest."
-            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+            puts "She thinks that you are too confident and you seem like an asshole."
+            puts ""
+            puts ""
+            puts "GAME OVER!"
+            puts ""
+            puts "Try again? Type 1 to restart or 2 to quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -108,13 +121,15 @@ system "clear"
     userinput = gets.chomp.to_i
         case
         when userinput == 1
-            puts "She replies, what do you want from me? I do not know you!"
             section4 = true
             break
         when userinput == 2
             puts "She is taken back a bit and points you the toilet next to her. What a dumb question."
-            puts "Game over"
-            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+            puts ""
+            puts ""
+            puts "GAME OVER!"
+            puts ""
+            puts "Try again? Type 1 to restart or 2 to quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -153,8 +168,11 @@ system "clear"
                 break
             when userinput == 2
                 puts "Sorry I have a boyfriend"
-                puts "Game over"
-                puts "Would you like to try again? Type 1 to restart or 2 to quit."
+                puts ""
+                puts ""
+                puts "GAME OVER!"
+                puts ""
+                puts "Try again? Type 1 to restart or 2 to quit."
                     input = gets.chomp.to_i
                     case
                     when input == 1
@@ -193,13 +211,15 @@ system "clear"
         userinput = gets.chomp.to_i
             case
             when userinput == 2
-                puts "Correct, please proceed."
                 section6 = true
                 break
             when userinput == 1
                 puts "You accidentally grabbed her bra strap and it broke so she got embarrased, angry and slapped you"
-                puts "Game over"
-                puts "Would you like to try again? Type 1 to restart or 2 to quit."
+                puts ""
+                puts ""
+                puts "GAME OVER!"
+                puts ""
+                puts "Try again? Type 1 to restart or 2 to quit."
                     input = gets.chomp.to_i
                     case
                     when input == 1
@@ -235,8 +255,11 @@ while section6
         case
         when userinput == 1
             puts "What?! You’re actually my Great Great Grandma with make up on!"
-            puts "Game over"
-            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+            puts ""
+            puts ""
+            puts "GAME OVER!"
+            puts ""
+            puts "Try again? Type 1 to restart or 2 to quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -255,8 +278,11 @@ while section6
             break
         when userinput == 3
             puts "I’ve had a tonne, but the worst one was you. I’m your ex remember! F&@# off"
-            puts "Game over"
-            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+            puts ""
+            puts ""
+            puts "GAME OVER!"
+            puts ""
+            puts "Try again? Type 1 to restart or 2 to quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
