@@ -73,6 +73,9 @@ system "clear"
 
                 when input == 2
                     exit = rungame = false, section2 = false, title = false
+                    # rungame = false
+                    # section1 = false
+                    # title = false
 
                 else
                     rungame = false
@@ -170,7 +173,7 @@ system "clear"
                 puts "Invalid selection."
                 rungame = true
             end
-    end
+        end
 
 
 system "clear"
@@ -214,111 +217,89 @@ system "clear"
 
 system "clear"
 
-    while section6
-        puts "You touch her leg and she looks at your surprised but intrigued."
-        puts "She replies, your hand is nice and strong"
-        puts ""
-        puts ""
-        puts "NEXT?"
-        puts "Do you ask her what her mothers name is?(1)"
-        puts "OR"
-        puts "Do you ask her if you can borrow $10 for an uber ride home.(2)"
-        puts "OR"
-        puts "Do you ask her, how many boyfriends she's had before?(3)"
-        userinput = gets.chomp.to_i
+while section6
+    puts "You touch her leg and she looks at your surprised but intrigued."
+    puts "She replies, your hand is nice and strong"
+    puts ""
+    puts ""
+    puts "NEXT?"
+    puts "Do you ask her what her mothers name is?(1)"
+    puts "OR"
+    puts "Do you ask her if you can borrow $10 for an uber ride home.(2)"
+    puts "OR"
+    puts "Do you ask her, how many boyfriends she's had before?(3)"
+    userinput = gets.chomp.to_i
 
-            case
-            when userinput == 1
-                puts "What?! You’re actually my Great Great Grandma with make up on!"
-                puts "Game over"
-                puts "Would you like to try again? Type 1 to restart or 2 to quit."
-                    input = gets.chomp.to_i
-                    case
-                    when input == 1
-                        rungame = true
-                    when input == 2
-                        exit = rungame = false, section6 = false, title = false
-                    else
-                        rungame = false
-                    end
-                    system "clear"
-                    section6 = false
-
-            when userinput == 2
-                puts "I have a car we can go home together."
-                section7 = true
-                break
-            when userinput == 3
-                puts "I’ve had a tonne, but the worst one was you. I’m your ex remember! F&@# off"
-                puts "Game over"
-                puts "Would you like to try again? Type 1 to restart or 2 to quit."
-                    input = gets.chomp.to_i
-                    case
-                    when input == 1
-                        rungame = true
-                    when input == 2
-                        exit = rungame = false, section6 = false, title = false
-                    else
-                        rungame = false
-                    end
-                    system "clear"
-                    section6 = false  
-
-            else
-                puts "Invalid selection."
-                rungame = true
-                section6 = false
-            end
-        end
-
-system "clear"
-
-        while section7
-            puts ""
-            puts "CONGRATUALATIONS YOU WIN!"
-            puts ""
-
-            puts ""
-            puts "Would you like to play again?"
-            puts "To replay (1)"
-            puts "To quit (2)"
-                replay = gets.chomp.to_i
+        case
+        when userinput == 1
+            puts "What?! You’re actually my Great Great Grandma with make up on!"
+            puts "Game over"
+            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+                input = gets.chomp.to_i
                 case
-                when replay == 1
+                when input == 1
                     rungame = true
-                    break
-                    system "clear"
+                when input == 2
+                    exit = rungame = false, section6 = false, title = false
                 else
-                    puts "Goodbye!"
-                    exit = rungame = false, section7 = false, title = false
+                    rungame = false
                 end
-                
-            end  
+                system "clear"
+                section6 = false
+
+        when userinput == 2
+            puts "I have a car we can go home together."
+            section7 = true
+            break
+        when userinput == 3
+            puts "I’ve had a tonne, but the worst one was you. I’m your ex remember! F&@# off"
+            puts "Game over"
+            puts "Would you like to try again? Type 1 to restart or 2 to quit."
+                input = gets.chomp.to_i
+                case
+                when input == 1
+                    rungame = true
+                when input == 2
+                    exit = rungame = false, section6 = false, title = false
+                else
+                    rungame = false
+                end
+                system "clear"
+                section6 = false  
+
+        else
+            puts "Invalid selection."
+            rungame = true
+            section6 = false
+        end
+    end
+
 system "clear"
-    end 
- 
+
+    while section7
+        puts ""
+        puts "CONGRATUALATIONS YOU WIN!"
+        puts ""
+
+        puts ""
+        puts "Would you like to play again?"
+        puts "To replay (1)"
+        puts "To quit (2)"
+            replay = gets.chomp.to_i
+            case
+            when replay == 1
+                rungame = true
+                break
+                system "clear"
+            else
+                puts "Goodbye!"
+                exit = rungame = false, section7 = false, title = false
+            end
+
+        end  
+system "clear"
+end 
+
 end
 
 storygame
-
-#comment
-
-# turn this into a method called "redo"
-# input = gets.chomp.to_i
-#     case
-#     when input == 1
-#         rungame = true
-
-#     when input == 2
-#         rungame = false
-
-#     else
-#         rungame = false
-#     end
-#     system "clear"
-#     section2 = false      
-#     else
-#     puts "Invalid selection."
-#     rungame = true
-# end
-#turn project into a class, add this as a method
