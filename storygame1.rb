@@ -73,6 +73,9 @@ system "clear"
 
                 when input == 2
                     exit = rungame = false, section2 = false, title = false
+                    # rungame = false
+                    # section1 = false
+                    # title = false
 
                 else
                     rungame = false
@@ -170,7 +173,7 @@ system "clear"
                 puts "Invalid selection."
                 rungame = true
             end
-    end
+        end
 
 
 system "clear"
@@ -229,7 +232,7 @@ system "clear"
 
             case
             when userinput == 1
-                puts "What?! You’re actually my Great Great Grandma with make up on!"
+                puts "What?! You’re actually my grand grand grandma with make up on!"
                 puts "Game over"
                 puts "Would you like to try again? Type 1 to restart or 2 to quit."
                     input = gets.chomp.to_i
@@ -269,34 +272,41 @@ system "clear"
                 rungame = true
                 section6 = false
             end
-        end
 
 system "clear"
 
         while section7
-            puts ""
-            puts "CONGRATUALATIONS YOU WIN!"
-            puts ""
+            puts "Congratualations! You win!"
+            section7 = false
+            rungame = false
+            
+        end
 
-            puts ""
-            puts "Would you like to play again?"
-            puts "To replay (1)"
-            puts "To quit (2)"
-                replay = gets.chomp.to_i
-                case
-                when replay == 1
-                    rungame = true
-                    break
-                    system "clear"
-                else
-                    puts "Goodbye!"
-                    exit = rungame = false, section7 = false, title = false
-                end
-                
-            end  
-system "clear"
-    end 
+end
+end
  
 end
 
 storygame
+
+#comment
+
+# turn this into a method called "redo"
+# input = gets.chomp.to_i
+#     case
+#     when input == 1
+#         rungame = true
+
+#     when input == 2
+#         rungame = false
+
+#     else
+#         rungame = false
+#     end
+#     system "clear"
+#     section2 = false      
+#     else
+#     puts "Invalid selection."
+#     rungame = true
+# end
+#turn project into a class, add this as a method
