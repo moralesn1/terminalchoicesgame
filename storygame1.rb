@@ -300,25 +300,3 @@ system "clear"
 end
 
 storygame
-
-#comment
-
-# turn this into a method called "redo"
-# input = gets.chomp.to_i
-#     case
-#     when input == 1
-#         rungame = true
-
-#     when input == 2
-#         rungame = false
-
-#     else
-#         rungame = false
-#     end
-#     system "clear"
-#     section2 = false      
-#     else
-#     puts "Invalid selection."
-#     rungame = true
-# end
-#turn project into a class, add this as a method
