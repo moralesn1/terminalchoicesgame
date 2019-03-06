@@ -99,3 +99,5 @@ Sometimes drawing diagrams helps a lot.
 
 ![alt text]https://github.com/moralesn1/terminalchoicesgame/blob/master/docs/IMG_20190305_121921.jpg
 
+![alt text]https://github.com/moralesn1/terminalchoicesgame/blob/master/docs/Loop%20problem.pages
+
