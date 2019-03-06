@@ -1,4 +1,5 @@
 require_relative "story_methods"
+require_relative "story_gameover"
 
 # def storygame
     exit = rungame = false, section1 = false, title = false
@@ -10,83 +11,84 @@ require_relative "story_methods"
 
     while section1 
         section_1_message
-    userinput = gets.chomp.to_i
-        case
-        when userinput == 1
-            section2 = true
-            rungame = true
-            break
-        when userinput == 2
-            system "Clear"
-            puts ""
-            puts ""
-            puts "GAME OVER!"
-            puts ""
-            puts ""
-            puts "She thinks you were looking at her boobs and she slaps you. You get kicked out. "
-            puts ""
-            puts ""
-            puts ""
-            puts ""
-            puts "Try again?" 
-            puts ""
-            puts "Type anything to restart." 
-            puts "OR"
-            puts "(1) Quit."
-            
-            input = gets.chomp.to_i
-                case
-                when input == 1
-                    exit = rungame = false, section1 = false, title = false
-                else
-                    rungame = true
-                end
-        else
-            puts "Invalid selection."
-            rungame = true
+        userinput = gets.chomp.to_i
+            case
+            when userinput == 1
+                section2 = true
+                rungame = true
+                break
+            when userinput == 2
+                section_1_gameover
+                system "Clear"
+                puts ""
+                puts ""
+                puts "GAME OVER!"
+                puts ""
+                puts ""
+                puts "She thinks you were looking at her boobs and she slaps you. You get kicked out. "
+                puts ""
+                puts ""
+                puts ""
+                puts ""
+                puts "Try again?" 
+                puts ""
+                puts "Type anything to restart." 
+                puts "OR"
+                puts "(1) Quit."
+                
+                input = gets.chomp.to_i
+                    case
+                    when input == 1
+                        exit = rungame = false, section1 = false, title = false
+                    else
+                        rungame = true
+                    end
+            else
+                puts "Invalid selection."
+                rungame = true
+            end
         end
-    end
 
 system "clear"
 
     while section2
-            section_2_message
-    userinput = gets.chomp.to_i
-        case
-        when userinput == 1
-            section3 = true
-            break
-        when userinput == 2
-            system "clear"
-            puts ""
-            puts ""
-            puts "GAME OVER!"
-            puts ""
-            puts ""
-            puts "She thinks that you are too confident and you seem like an ASSHOLE!."
-            puts ""
-            puts ""
-            puts ""
-            puts ""
-            puts "Try again?" 
-            puts ""
-            puts "Type anything to restart." 
-            puts "OR"
-            puts "(1) Quit."
-            
-            input = gets.chomp.to_i
-                case
-                when input == 1
-                    exit = rungame = false, section2 = false, title = false
-                else
-                    rungame = true
-                end
-            system "clear"
-            section2 = false      
-        else
-            puts "Invalid selection."
-            rungame = true
-        end
+        section_2_message
+        userinput = gets.chomp.to_i
+            case
+            when userinput == 1
+                section3 = true
+                break
+            when userinput == 2
+                system "clear"
+                puts ""
+                puts ""
+                puts "GAME OVER!"
+                puts ""
+                puts ""
+                puts "She thinks that you are too confident and you seem like an ASSHOLE!."
+                puts ""
+                puts ""
+                puts ""
+                puts ""
+                puts "Try again?" 
+                puts ""
+                puts "Type anything to restart." 
+                puts "OR"
+                puts "(1) Quit."
+                
+                input = gets.chomp.to_i
+                    case
+                    when input == 1
+                        exit = rungame = false, section2 = false, title = false
+                    else
+                        rungame = true
+                    end
+                system "clear"
+                section2 = false      
+            else
+                puts "Invalid selection."
+                rungame = true
+            end
     end
 
 system "clear"
@@ -94,40 +96,40 @@ system "clear"
 
     while section3
         section_3_message
-    userinput = gets.chomp.to_i
-        case
-        when userinput == 1
-            section4 = true
-            break
-        when userinput == 2
-            system "clear"
-            puts ""
-            puts ""
-            puts "GAME OVER!"
-            puts ""
-            puts ""
-            puts "She is taken back a bit and points you the toilet next to her. What a dumb question."
-            puts ""
-            puts ""
-            puts ""
-            puts ""
-            puts "Try again?" 
-            puts ""
-            puts "Type anything to restart." 
-            puts "OR"
-            puts "(1) Quit."
-            
-            input = gets.chomp.to_i
-                case
-                when input == 1
-                    exit = rungame = false, section3 = false, title = false
-                else
-                    rungame = true
-                end
-        else
-            puts "Invalid selection."
-            rungame = true
-        end
+        userinput = gets.chomp.to_i
+            case
+            when userinput == 1
+                section4 = true
+                break
+            when userinput == 2
+                system "clear"
+                puts ""
+                puts ""
+                puts "GAME OVER!"
+                puts ""
+                puts ""
+                puts "She is taken back a bit and points you the toilet next to her. What a dumb question."
+                puts ""
+                puts ""
+                puts ""
+                puts ""
+                puts "Try again?" 
+                puts ""
+                puts "Type anything to restart." 
+                puts "OR"
+                puts "(1) Quit."
+                
+                input = gets.chomp.to_i
+                    case
+                    when input == 1
+                        exit = rungame = false, section3 = false, title = false
+                    else
+                        rungame = true
+                    end
+            else
+                puts "Invalid selection."
+                rungame = true
+            end
     end
 
 system "clear"
