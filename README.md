@@ -30,7 +30,7 @@ In order to use this template,
 a new method on story_methods.rb should be created outputing the desired message and choice you would like your audience to see.
 For example, on this image, a new method created inside story_methods is the basis for importing text. (Line 128, 129)
 
-![alt text]https://github.com/moralesn1/terminalchoicesgame/blob/master/docs/Screen%20Shot%202019-03-06%20at%204.06.53%20pm.png
+![alt text]https://github.com/moralesn1/terminalchoicesgame/blob/master/docs/Screen%20Shot%202019-03-06%20at%204.06.53%20pm.png?raw=true
 
 Once you have your desired message, the next step is to call the method inside the section you want your message placed.
 In this example, section_1_message which we defined on our story_methods.rb is called on line 34.
