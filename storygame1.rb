@@ -37,7 +37,7 @@ def storygame
             puts "GAME OVER!"
             puts ""
             puts ""
-            puts "She thinks you were looking at her chest and she slaps you. You get kicked out. "
+            puts "She thinks you were looking at her boobs and she slaps you. You get kicked out. "
             puts ""
             puts ""
             puts ""
@@ -83,12 +83,13 @@ system "clear"
             section3 = true
             break
         when userinput == 2
+            system "clear"
             puts ""
             puts ""
             puts "GAME OVER!"
             puts ""
             puts ""
-            puts "She thinks that you are too confident and you seem like an asshole."
+            puts "She thinks that you are too confident and you seem like an ASSHOLE!."
             puts ""
             puts ""
             puts ""
@@ -137,6 +138,7 @@ system "clear"
             section4 = true
             break
         when userinput == 2
+            system "clear"
             puts ""
             puts ""
             puts "GAME OVER!"
@@ -193,6 +195,7 @@ system "clear"
                 section5 = true
                 break
             when userinput == 2
+                system "clear"
                 puts ""
                 puts ""
                 puts "GAME OVER!"
@@ -252,6 +255,7 @@ system "clear"
                 section6 = true
                 break
             when userinput == 1
+                system "clear"
                 puts ""
                 puts ""
                 puts "GAME OVER!"
@@ -306,6 +310,7 @@ while section6
 
         case
         when userinput == 1
+            system "clear"
             puts ""
             puts ""
             puts "GAME OVER!"
@@ -336,6 +341,7 @@ while section6
             section7 = true
             break
         when userinput == 3
+            system "clear"
             puts ""
             puts ""
             puts "GAME OVER!"
@@ -370,6 +376,7 @@ while section6
 system "clear"
 
     while section7
+        system "clear"
         puts ""
         puts "CONGRATUALATIONS YOU WIN!"
         puts ""
