@@ -7,6 +7,7 @@ require 'colorized_string'
     rungame = true
     section1 = true
     title = true
+    #loops back to the title page if the user choses the wrong answer.
     while title
     puts  "___ __ ______________   _______________________________                                              
          7  V  V  77     77  7   7     77     77        77     7                                              
@@ -28,12 +29,13 @@ require 'colorized_string'
         |  !  7|  7  ||  7  7  ||  __|_     |  |  ||  __|      |  7___|     ||  |  ||  ||  7___|  __|_!__   7
         |     ||  |  ||  |  |  ||     7     |  !  ||  7        |     7|  7  ||  !  ||  ||     7|     77     |
         !_____!!__!__!!__!__!__!!_____!     !_____!!__!        !_____!!__!__!!_____!!__!!_____!!_____!!_____!"
-
+        #section 1 block
     while section1 
         section_1_message
         userinput = gets.chomp.to_i
             case
             when userinput == 1
+                #section2 true moves them to the next stage of questions
                 section2 = true
                 rungame = true
                 break
@@ -56,11 +58,13 @@ require 'colorized_string'
                 puts "OR"
                 puts ""
                 puts "(1) Quit."
-                
+                #exit loop. Changing this to a method, though we need to restructure the sections to be an array. For example, if the user chooses the correct path, instead of the next section being true, it can be section.index += 1.
+                #this would again make this whole code a lot easier to read.
                 input = gets.chomp.to_i
                     case
                     when input == 1
                         exit = rungame = false, section1 = false, title = false
+                        system "clear"
                     else
                         system "clear"
                         rungame = true
@@ -197,6 +201,7 @@ system "clear"
                 input = gets.chomp.to_i
                     case
                     when input == 1
+                        system "clear"
                         exit = rungame = false, section4 = false, title = false
                     else
                         system "clear"
@@ -349,6 +354,7 @@ system "clear"
                 break
                 system "clear"
             else
+
                 puts "Goodbye!"
                 exit = rungame = false, section7 = false, title = false
             end

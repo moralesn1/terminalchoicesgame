@@ -1,5 +1,7 @@
 # Hello and welcome to our Sequential Story Game Creator.
 
+https://github.com/moralesn1/
+
 ## Prerequisites.
 You'll need these in order to use this application.
 * Ruby Colorize 
@@ -20,7 +22,8 @@ Download all the files on this list and then run the file “storygame1.rb” in
 
 ## About this project.
 
-This project is designed for people to create their own story and run it through terminal, the only thing missing is your own creativity! 
+This project is designed for people to create their own exciting choice based stories and run it through the terminal. The only thing missing is your own creativity! 
+
 
 
 ## Current Fixes
