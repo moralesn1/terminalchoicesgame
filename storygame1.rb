@@ -352,6 +352,7 @@ while section6
                 case
                 when input == 1
                     rungame = true
+                    system "clear"
                 when input == 2
                     exit = rungame = false, section6 = false, title = false
                 else
