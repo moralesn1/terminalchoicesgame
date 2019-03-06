@@ -52,4 +52,11 @@ This way, if we needed to make changes to the story or what not, it was easier t
 
 However, there are some issues currently with the bad moves/ending code. We are currently working on being able to call the method from another file again to make the code a lot easier to read and just like the story based methods, their own file to access if we need to change or alter the text.
 
+# The design process for this app
 
+The flow Chart
+
+![alt flowchart]https://github.com/moralesn1/terminalchoicesgame/blob/master/DocumentationTerminal/Flowchart.pages
+
+
+![alt text]https://raw.githubusercontent.com/moralesn1/terminalchoicesgame/master/DocumentationTerminal/Screen%20Shot%202019-03-05%20at%205.00.41%20pm.png
