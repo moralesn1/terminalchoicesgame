@@ -187,7 +187,7 @@ system "clear"
         puts ""
         puts "OR"
         puts ""
-        puts "(2.) Buy her a drink?"
+        puts "(2). Buy her a drink?"
         userinput = gets.chomp.to_i
             case
             when userinput == 1
@@ -337,7 +337,6 @@ while section6
                 section6 = false
 
         when userinput == 2
-            puts "I have a car we can go home together."
             section7 = true
             break
         when userinput == 3
@@ -381,7 +380,9 @@ system "clear"
         puts ""
         puts "CONGRATUALATIONS YOU WIN!"
         puts ""
-
+        puts ""
+        puts "I am an uberdriver I can drive you home Give me $10."
+        puts ""
         puts ""
         puts "Would you like to play again?"
         puts "To replay (1)"
