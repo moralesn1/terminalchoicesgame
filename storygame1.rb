@@ -42,8 +42,10 @@ def storygame
             puts ""
             puts ""
             puts ""
-            puts ""
-            puts "Try again?" "(1) Restart" "(2) Quit."
+            puts "Try again?" 
+            puts "(1) Restart" 
+            puts "OR"
+            puts "(2) Quit."
             
             input = gets.chomp.to_i
                 case
@@ -94,8 +96,10 @@ system "clear"
             puts ""
             puts ""
             puts ""
-            puts ""
-            puts "Try again?" "(1) Restart" "(2) Quit."
+            puts "Try again?" 
+            puts "(1) Restart" 
+            puts "OR"
+            puts "(2) Quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -149,8 +153,10 @@ system "clear"
             puts ""
             puts ""
             puts ""
-            puts ""
-            puts "Try again?" "(1) Restart" "(2) Quit."
+            puts "Try again?" 
+            puts "(1) Restart" 
+            puts "OR"
+            puts "(2) Quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -206,8 +212,10 @@ system "clear"
                 puts ""
                 puts ""
                 puts ""
-                puts ""
-                puts "Try again?" "(1) Restart" "(2) Quit."
+                puts "Try again?" 
+                puts "(1) Restart" 
+                puts "OR"
+                puts "(2) Quit."
                     input = gets.chomp.to_i
                     case
                     when input == 1
@@ -266,8 +274,10 @@ system "clear"
                 puts ""
                 puts ""
                 puts ""
-                puts ""
-                puts "Try again?" "(1) Restart" "(2) Quit."
+                puts "Try again?" 
+                puts "(1) Restart" 
+                puts "OR"
+                puts "(2) Quit."
                     input = gets.chomp.to_i
                     case
                     when input == 1
@@ -321,8 +331,10 @@ while section6
             puts ""
             puts ""
             puts ""
-            puts ""
-            puts "Try again?" "(1) Restart" "(2) Quit."
+            puts "Try again?" 
+            puts "(1) Restart" 
+            puts "OR"
+            puts "(2) Quit."
             
                 input = gets.chomp.to_i
                 case
@@ -351,8 +363,10 @@ while section6
             puts ""
             puts ""
             puts ""
-            puts ""
-            puts "Try again?" "(1) Restart" "(2) Quit."
+            puts "Try again?" 
+            puts "(1) Restart" 
+            puts "OR"
+            puts "(2) Quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -379,6 +393,7 @@ system "clear"
         system "clear"
         puts ""
         puts "CONGRATUALATIONS YOU WIN!"
+        puts "Don't actually try this for obvious reasons."
         puts ""
         puts ""
         puts "I am an uberdriver I can drive you home Give me $10."
