@@ -38,3 +38,15 @@ Currently, we are exploring different avenues to have the game over messages out
 # Built with
 
 Ruby 2.6.0
+
+# Developer Notes
+
+This program was initially created with a method defining the entire project. Inside of our method, we had a few variables set in order to exit, restart, continue and to begin the initial section block.
+
+The code was quite long and we had an issue with rewriting the story so we seperated the story into another file to clean up the code, to make it easier to navigate around instead of having to look for the section of code, then looking at the output message of the code.
+
+This way, if we needed to make changes to the story or what not, it was easier to as it was on a seperate file inside a method with only story based methods inside. Instead of having 20 lines of code for the story, it's been replaced with a method that was defined in another file. Our tech lead suggested this course of action and in doing so has made the readability of a code clearer.
+
+However, there are some issues currently with the bad moves/ending code. We are currently working on being able to call the method from another file again to make the code a lot easier to read and just like the story based methods, their own file to access if we need to change or alter the text.
+
+
