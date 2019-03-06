@@ -62,6 +62,11 @@ This way, if we needed to make changes to the story or what not, it was easier t
 
 However, there are some issues currently with the bad moves/ending code. We are currently working on being able to call the method from another file again to make the code a lot easier to read and just like the story based methods, their own file to access if we need to change or alter the text.
 
+# Ethical Issues that may impact this application.
+
+Due to the nature of story telling. Users may use this in ways that may be unintentionally or intentionally harmful to others. 
+We do not condone this behaviour.
+
 # The design process for this app
 
 The flow Chart
