@@ -33,6 +33,7 @@ def storygame
         when userinput == 2
             system "Clear"
             puts ""
+            puts ""
             puts "GAME OVER!"
             puts ""
             puts ""
@@ -82,12 +83,18 @@ system "clear"
             section3 = true
             break
         when userinput == 2
-            puts "She thinks that you are too confident and you seem like an asshole."
             puts ""
             puts ""
             puts "GAME OVER!"
             puts ""
-            puts "Try again? Type 1 to restart or 2 to quit."
+            puts ""
+            puts "She thinks that you are too confident and you seem like an asshole."
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts "Try again?" "(1) Restart" "(2) Quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -113,7 +120,7 @@ system "clear"
     while section3
     puts ""
     puts ""
-    puts "You walk towards her and approach her. Her attention is now focused on you."
+    puts "You approach her so now her attention is focused on you."
     puts ""
     puts ""
     puts "NEXT?"
@@ -123,19 +130,25 @@ system "clear"
     puts ""
     puts "OR"
     puts ""
-    puts "(2). \"Where is the toilet?\"(2)"
+    puts "(2). \"Where is the toilet?\""
     userinput = gets.chomp.to_i
         case
         when userinput == 1
             section4 = true
             break
         when userinput == 2
-            puts "She is taken back a bit and points you the toilet next to her. What a dumb question."
             puts ""
             puts ""
             puts "GAME OVER!"
             puts ""
-            puts "Try again? Type 1 to restart or 2 to quit."
+            puts ""
+            puts "She is taken back a bit and points you the toilet next to her. What a dumb question."
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts "Try again?" "(1) Restart" "(2) Quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -158,17 +171,21 @@ system "clear"
 system "clear"
 
     while section4
+        puts ""
+        puts ""
         puts "She replies \"What do you want from me? I do not know you!\""
-        puts "She’s a bit defensive and you acknowledge her body language."
+        puts "She’s a bit defensive."
         puts ""
         puts ""
         puts "NEXT?"
         puts "Do you.."
         puts ""
         puts ""
-        puts "Do you Introduce yourself(1)"
+        puts "(1). Introduce yourself?"
+        puts ""
         puts "OR"
-        puts "Do you buy her, her favourite drink?(2)"
+        puts ""
+        puts "(2.) Buy her a drink?"
         userinput = gets.chomp.to_i
             case
             when userinput == 1
@@ -176,12 +193,18 @@ system "clear"
                 section5 = true
                 break
             when userinput == 2
-                puts "Sorry I have a boyfriend"
                 puts ""
                 puts ""
                 puts "GAME OVER!"
                 puts ""
-                puts "Try again? Type 1 to restart or 2 to quit."
+                puts ""
+                puts "Sorry I have a boyfriend"
+                puts ""
+                puts ""
+                puts ""
+                puts ""
+                puts ""
+                puts "Try again?" "(1) Restart" "(2) Quit."
                     input = gets.chomp.to_i
                     case
                     when input == 1
@@ -209,26 +232,38 @@ system "clear"
 
 
     while section5
+        puts ""
+        puts ""
         puts "She replies back my name is Jane with a superfriendly smile on her face."
-        puts "Now she’s opened up, so it is the perfect time to approach her closely!" #and assert your dominance as a male."
+        puts "She’s opened up, now's the perfect time to approach her closely!" #and assert your dominance as a male."
         puts ""
         puts ""
         puts "NEXT?"
-        puts "Do you touch her shoulder?(1)"
+        puts "Do you.."
+        puts ""
+        puts "(1). Touch her shoulder?"
+        puts ""
         puts "OR"
-        puts "Do you touch her leg?(2)"
+        puts ""
+        puts "(2). Touch her leg?"
         userinput = gets.chomp.to_i
             case
             when userinput == 2
                 section6 = true
                 break
             when userinput == 1
-                puts "You accidentally grabbed her bra strap and it broke so she got embarrased, angry and slapped you"
                 puts ""
                 puts ""
                 puts "GAME OVER!"
                 puts ""
-                puts "Try again? Type 1 to restart or 2 to quit."
+                puts ""
+                puts "You accidentally grabbed her bra strap and it broke so she got embarrased, angry and slapped you"
+                puts ""
+                puts ""
+                puts ""
+                puts ""
+                puts ""
+                puts "Try again?" "(1) Restart" "(2) Quit."
                     input = gets.chomp.to_i
                     case
                     when input == 1
@@ -249,26 +284,41 @@ system "clear"
 system "clear"
 
 while section6
-    puts "You touch her leg and she looks at your surprised but intrigued."
+    puts ""
+    puts ""
+    puts "You touch her leg and she looks surprised but intrigued."
     puts "She replies, your hand is nice and strong"
     puts ""
     puts ""
     puts "NEXT?"
-    puts "Do you ask her what her mothers name is?(1)"
+    puts "Do you ask her.."
+    puts ""
+    puts "(1). What her mother's name is?"
+    puts ""
     puts "OR"
-    puts "Do you ask her if you can borrow $10 for an uber ride home.(2)"
+    puts ""
+    puts "(2). If you can borrow $10 for an uber ride home."
+    puts ""
     puts "OR"
-    puts "Do you ask her, how many boyfriends she's had before?(3)"
+    puts ""
+    puts "(3). How many boyfriends she's had before?"
     userinput = gets.chomp.to_i
 
         case
         when userinput == 1
-            puts "What?! You’re actually my Great Great Grandma with make up on!"
             puts ""
             puts ""
             puts "GAME OVER!"
             puts ""
-            puts "Try again? Type 1 to restart or 2 to quit."
+            puts ""
+            puts "What?! You’re actually my Aunty with make up on!"
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts "Try again?" "(1) Restart" "(2) Quit."
+            
                 input = gets.chomp.to_i
                 case
                 when input == 1
@@ -286,12 +336,18 @@ while section6
             section7 = true
             break
         when userinput == 3
-            puts "I’ve had a tonne, but the worst one was you. I’m your ex remember! F&@# off"
             puts ""
             puts ""
             puts "GAME OVER!"
             puts ""
-            puts "Try again? Type 1 to restart or 2 to quit."
+            puts ""
+            puts "I’ve had a tonne, but the worst one was you. I’m your ex remember! F&@# off"
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts ""
+            puts "Try again?" "(1) Restart" "(2) Quit."
                 input = gets.chomp.to_i
                 case
                 when input == 1
