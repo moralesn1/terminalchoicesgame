@@ -1,13 +1,33 @@
 require_relative "story_methods"
 require_relative "story_gameover"
+require 'colorize'
+require 'colorized_string'
 
-# def storygame
     exit = rungame = false, section1 = false, title = false
     rungame = true
     section1 = true
     title = true
     while title
-        puts "Welcome to the game of choices.".upcase
+    puts  "___ __ ______________   _______________________________                                              
+         7  V  V  77     77  7   7     77     77        77     7                                              
+        |  |  |  ||  ___!|  |   |  ___!|  7  ||  _  _  ||  ___!                                              
+        |  !  !  ||  __|_|  !___|  7___|  |  ||  7  7  ||  __|_                                              
+        |        ||     7|     7|     7|  !  ||  |  |  ||     7                                              
+        !________!!_____!!_____!!_____!!_____!!__!__!__!!_____!                                              
+                                                                                                             
+        _______________     ______________________                                                           
+        7      77     7     7      77  7  77     7                                                           
+        !__  __!|  7  |     !__  __!|  !  ||  ___!                                                           
+          7  7  |  |  |       7  7  |     ||  __|_                                                           
+          |  |  |  !  |       |  |  |  7  ||     7                                                           
+          !__!  !_____!       !__!  !__!__!!_____!                                                           
+                                                                                                             
+        _______________________________     ______________     ______________________________________________
+        7     77  _  77        77     7     7     77     7     7     77  7  77     77  77     77     77     7
+        |   __!|  _  ||  _  _  ||  ___!     |  7  ||  ___!     |  ___!|  !  ||  7  ||  ||  ___!|  ___!|  ___!
+        |  !  7|  7  ||  7  7  ||  __|_     |  |  ||  __|      |  7___|     ||  |  ||  ||  7___|  __|_!__   7
+        |     ||  |  ||  |  |  ||     7     |  !  ||  7        |     7|  7  ||  !  ||  ||     7|     77     |
+        !_____!!__!__!!__!__!__!!_____!     !_____!!__!        !_____!!__!__!!_____!!__!!_____!!_____!!_____!"
 
     while section1 
         section_1_message
@@ -18,14 +38,13 @@ require_relative "story_gameover"
                 rungame = true
                 break
             when userinput == 2
-                section_1_gameover
                 system "Clear"
                 puts ""
                 puts ""
-                puts "GAME OVER!"
+                puts "GAME OVER!".colorize(:red)
                 puts ""
                 puts ""
-                puts "She thinks you were looking at her boobs and she slaps you. You get kicked out. "
+                puts "She thinks you were looking at her boobs and she slaps you. You get kicked out. ".colorize(:red)
                 puts ""
                 puts ""
                 puts ""
@@ -33,7 +52,9 @@ require_relative "story_gameover"
                 puts "Try again?" 
                 puts ""
                 puts "Type anything to restart." 
+                puts ""
                 puts "OR"
+                puts ""
                 puts "(1) Quit."
                 
                 input = gets.chomp.to_i
@@ -41,10 +62,13 @@ require_relative "story_gameover"
                     when input == 1
                         exit = rungame = false, section1 = false, title = false
                     else
+                        system "clear"
                         rungame = true
+
                     end
             else
-                puts "Invalid selection."
+                system "Clear"
+                puts "Invalid selection.".colorize(:red)
                 rungame = true
             end
         end
@@ -62,10 +86,10 @@ system "clear"
                 system "clear"
                 puts ""
                 puts ""
-                puts "GAME OVER!"
+                puts "GAME OVER!".colorize(:red)
                 puts ""
                 puts ""
-                puts "She thinks that you are too confident and you seem like an ASSHOLE!."
+                puts "She thinks that you are too confident and you seem like an ASSHOLE!.".colorize(:red)
                 puts ""
                 puts ""
                 puts ""
@@ -73,7 +97,9 @@ system "clear"
                 puts "Try again?" 
                 puts ""
                 puts "Type anything to restart." 
+                puts ""
                 puts "OR"
+                puts ""
                 puts "(1) Quit."
                 
                 input = gets.chomp.to_i
@@ -81,12 +107,14 @@ system "clear"
                     when input == 1
                         exit = rungame = false, section2 = false, title = false
                     else
+                        system "clear"
                         rungame = true
                     end
                 system "clear"
                 section2 = false      
             else
-                puts "Invalid selection."
+                system "Clear"
+                puts "Invalid selection.".colorize(:red)
                 rungame = true
             end
     end
@@ -105,10 +133,10 @@ system "clear"
                 system "clear"
                 puts ""
                 puts ""
-                puts "GAME OVER!"
+                puts "GAME OVER!".colorize(:red)
                 puts ""
                 puts ""
-                puts "She is taken back a bit and points you the toilet next to her. What a dumb question."
+                puts "She is taken back a bit and points you the toilet next to her. What a dumb question.".colorize(:red)
                 puts ""
                 puts ""
                 puts ""
@@ -116,7 +144,9 @@ system "clear"
                 puts "Try again?" 
                 puts ""
                 puts "Type anything to restart." 
+                puts ""
                 puts "OR"
+                puts ""
                 puts "(1) Quit."
                 
                 input = gets.chomp.to_i
@@ -124,10 +154,12 @@ system "clear"
                     when input == 1
                         exit = rungame = false, section3 = false, title = false
                     else
+                        system "clear"
                         rungame = true
                     end
             else
-                puts "Invalid selection."
+                system "Clear"
+                puts "Invalid selection.".colorize(:red)
                 rungame = true
             end
     end
@@ -140,17 +172,16 @@ system "clear"
         userinput = gets.chomp.to_i
             case
             when userinput == 1
-                puts "She replies back my name is Jane with a smiling seductive look on her face."
                 section5 = true
                 break
             when userinput == 2
                 system "clear"
                 puts ""
                 puts ""
-                puts "GAME OVER!"
+                puts "GAME OVER!".colorize(:red)
                 puts ""
                 puts ""
-                puts "Sorry I have a boyfriend"
+                puts "Sorry I have a boyfriend".colorize(:red)
                 puts ""
                 puts ""
                 puts ""
@@ -158,7 +189,9 @@ system "clear"
                 puts "Try again?" 
                 puts ""
                 puts "Type anything to restart." 
+                puts ""
                 puts "OR"
+                puts ""
                 puts "(1) Quit."
                 
                 input = gets.chomp.to_i
@@ -166,12 +199,14 @@ system "clear"
                     when input == 1
                         exit = rungame = false, section4 = false, title = false
                     else
+                        system "clear"
                         rungame = true
                     end  
                     system "clear"
                     section4 = false  
             else
-                puts "Invalid selection."
+                system "Clear"
+                puts "Invalid selection.".colorize(:red)
                 rungame = true
             end
         end
@@ -191,10 +226,10 @@ system "clear"
                 system "clear"
                 puts ""
                 puts ""
-                puts "GAME OVER!"
+                puts "GAME OVER!".colorize(:red)
                 puts ""
                 puts ""
-                puts "You accidentally grabbed her bra strap and it broke so she got embarrased, angry and slapped you"
+                puts "You accidentally grabbed her bra strap and it broke so she got embarrased, angry and slapped you".colorize(:red)
                 puts ""
                 puts ""
                 puts ""
@@ -202,7 +237,9 @@ system "clear"
                 puts "Try again?" 
                 puts ""
                 puts "Type anything to restart." 
+                puts ""
                 puts "OR"
+                puts ""
                 puts "(1) Quit."
                 
                 input = gets.chomp.to_i
@@ -210,12 +247,14 @@ system "clear"
                     when input == 1
                         exit = rungame = false, section5 = false, title = false
                     else
+                        system "clear"
                         rungame = true
                     end
                 system "clear"
                 section5 = false  
         else
-            puts "Invalid selection."
+            system "Clear"
+            puts "Invalid selection.".colorize(:red)
             rungame = true
         end
     end
@@ -231,10 +270,10 @@ while section6
             system "clear"
             puts ""
             puts ""
-            puts "GAME OVER!"
+            puts "GAME OVER!".colorize(:red)
             puts ""
             puts ""
-            puts "What?! You’re actually my Aunty with make up on!"
+            puts "What?! You’re actually my Aunty with make up on!".colorize(:red)
             puts ""
             puts ""
             puts ""
@@ -242,7 +281,9 @@ while section6
             puts "Try again?" 
             puts ""
             puts "Type anything to restart." 
+            puts ""
             puts "OR"
+            puts ""
             puts "(1) Quit."
             
             input = gets.chomp.to_i
@@ -250,8 +291,11 @@ while section6
                 when input == 1
                     exit = rungame = false, section6 = false, title = false
                 else
+                    system "clear"
                     rungame = true
                 end
+                system "clear"
+                section6 = false
 
         when userinput == 2
             section7 = true
@@ -260,10 +304,10 @@ while section6
             system "clear"
             puts ""
             puts ""
-            puts "GAME OVER!"
+            puts "GAME OVER!".colorize(:red)
             puts ""
             puts ""
-            puts "I’ve had a tonne, but the worst one was you. I’m your ex remember! F&@# off"
+            puts "I’ve had a tonne, but the worst one was you. I’m your ex remember! F&@# off".colorize(:red)
             puts ""
             puts ""
             puts ""
@@ -271,7 +315,9 @@ while section6
             puts "Try again?" 
             puts ""
             puts "Type anything to restart." 
+            puts ""
             puts "OR"
+            puts ""
             puts "(1) Quit."
             
             input = gets.chomp.to_i
@@ -280,14 +326,15 @@ while section6
                     exit = rungame = false, section6 = false, title = false
                 else
                     rungame = true
+                    system "clear"
                 end
                 system "clear"
                 section6 = false  
 
         else
-            puts "Invalid selection."
+            system "Clear"
+            puts "Invalid selection.".colorize(:red)
             rungame = true
-            section6 = false
         end
     end
 

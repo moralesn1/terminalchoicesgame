@@ -1,9 +1,16 @@
 # Hello and welcome to our Sequential Story Game Creator.
 
+## Prerequisites.
+You'll need these in order to use this application.
+* Ruby Colorize 
+https://github.com/fazibear/colorize
 
+This gem alters the colour of the text inside of terminal.
 
-
+To install this: Run this command in Terminal
+* gem install colorize
 ## Running this file.
+
 
 Download all the files on this list and then run the file “storygame1.rb” in your terminal.
 

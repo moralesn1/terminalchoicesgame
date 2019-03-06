@@ -3,10 +3,10 @@ def section_1_gameover
     system "Clear"
     puts ""
     puts ""
-    puts "GAME OVER!"
+    puts "GAME OVER!".colorize(:red)
     puts ""
     puts ""
-    puts "She thinks you were looking at her boobs and she slaps you. You get kicked out. "
+    puts "She thinks you were looking at her boobs and she slaps you. You get kicked out. ".colorize(:red)
     puts ""
     puts ""
     puts ""
