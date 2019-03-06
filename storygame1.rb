@@ -39,7 +39,7 @@ def storygame
             puts "She thinks you were looking at her chest and she slaps you. You get kicked out. "
             puts ""
             puts ""
-            puts "" 
+            puts ""
             puts ""
             puts ""
             puts "Try again?" "(1) Restart" "(2) Quit."
@@ -62,7 +62,8 @@ def storygame
 system "clear"
 
     while section2
-
+    puts ""
+    puts ""
     puts "You make eye contact with her."
     puts "She looks back at you and smiles."
     puts ""
@@ -110,14 +111,19 @@ system "clear"
 
 
     while section3
-    
+    puts ""
+    puts ""
     puts "You walk towards her and approach her. Her attention is now focused on you."
     puts ""
     puts ""
     puts "NEXT?"
-    puts "Do you ask her \"What is your name?\"(1)"
+    puts "Do you ask her.."
+    puts ""
+    puts "(1). \"What is your name?\""
+    puts ""
     puts "OR"
-    puts "Ask her, \"Where is the toilet?\"(2)"
+    puts ""
+    puts "(2). \"Where is the toilet?\"(2)"
     userinput = gets.chomp.to_i
         case
         when userinput == 1
@@ -157,6 +163,9 @@ system "clear"
         puts ""
         puts ""
         puts "NEXT?"
+        puts "Do you.."
+        puts ""
+        puts ""
         puts "Do you Introduce yourself(1)"
         puts "OR"
         puts "Do you buy her, her favourite drink?(2)"
