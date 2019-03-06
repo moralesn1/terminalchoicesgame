@@ -23,7 +23,7 @@ def storygame
     puts "OR"
     puts ""
     puts "(2). Stare at her body?"
-    # puts "Type 1 for choice one or type 2 for choice 2"
+    # puts "Type 1 for choice one or type 2 for choice 2 "
     userinput = gets.chomp.to_i
         case
         when userinput == 1
