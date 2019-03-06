@@ -1,6 +1,6 @@
+require_relative "story_methods"
 
-
-def storygame
+# def storygame
     exit = rungame = false, section1 = false, title = false
     rungame = true
     section1 = true
@@ -8,22 +8,8 @@ def storygame
     while title
         puts "Welcome to the game of choices.".upcase
 
-
     while section1 
-    puts ""
-    puts ""
-    puts "You see a girl at the bar that peaks your interests and gets your testosterone up."
-    puts ""
-    puts ""
-    puts "NEXT?"
-    puts "Do you.."
-    puts ""
-    puts "(1). Make eye contact with her?"
-    puts ""
-    puts "OR"
-    puts ""
-    puts "(2). Stare at her body?"
-    # puts "Type 1 for choice one or type 2 for choice 2 "
+        section_1_message
     userinput = gets.chomp.to_i
         case
         when userinput == 1
@@ -43,18 +29,17 @@ def storygame
             puts ""
             puts ""
             puts "Try again?" 
-            puts "(1) Restart" 
+            puts ""
+            puts "Type anything to restart." 
             puts "OR"
-            puts "(2) Quit."
+            puts "(1) Quit."
             
             input = gets.chomp.to_i
                 case
                 when input == 1
-                    rungame = true
-                when input == 2
                     exit = rungame = false, section1 = false, title = false
                 else
-                    rungame = false
+                    rungame = true
                 end
         else
             puts "Invalid selection."
@@ -65,20 +50,7 @@ def storygame
 system "clear"
 
     while section2
-    puts ""
-    puts ""
-    puts "You make eye contact with her."
-    puts "She looks back at you and smiles."
-    puts ""
-    puts ""
-    puts "NEXT?"
-    puts "Do you.."
-    puts ""
-    puts "(1). Walk towards her with super confidence?."
-    puts ""
-    puts "OR"
-    puts ""
-    puts "(2). Smile back at her with super confidence?."
+            section_2_message
     userinput = gets.chomp.to_i
         case
         when userinput == 1
@@ -97,19 +69,17 @@ system "clear"
             puts ""
             puts ""
             puts "Try again?" 
-            puts "(1) Restart" 
+            puts ""
+            puts "Type anything to restart." 
             puts "OR"
-            puts "(2) Quit."
-                input = gets.chomp.to_i
+            puts "(1) Quit."
+            
+            input = gets.chomp.to_i
                 case
                 when input == 1
-                    rungame = true
-
-                when input == 2
                     exit = rungame = false, section2 = false, title = false
-
                 else
-                    rungame = false
+                    rungame = true
                 end
             system "clear"
             section2 = false      
@@ -123,19 +93,7 @@ system "clear"
 
 
     while section3
-    puts ""
-    puts ""
-    puts "You approach her so now her attention is focused on you."
-    puts ""
-    puts ""
-    puts "NEXT?"
-    puts "Do you ask her.."
-    puts ""
-    puts "(1). \"What is your name?\""
-    puts ""
-    puts "OR"
-    puts ""
-    puts "(2). \"Where is the toilet?\""
+        section_3_message
     userinput = gets.chomp.to_i
         case
         when userinput == 1
@@ -154,22 +112,18 @@ system "clear"
             puts ""
             puts ""
             puts "Try again?" 
-            puts "(1) Restart" 
+            puts ""
+            puts "Type anything to restart." 
             puts "OR"
-            puts "(2) Quit."
-                input = gets.chomp.to_i
+            puts "(1) Quit."
+            
+            input = gets.chomp.to_i
                 case
                 when input == 1
-                    rungame = true
-
-                when input == 2
                     exit = rungame = false, section3 = false, title = false
-
                 else
-                    rungame = false
-                end   
-                system "clear"
-                section3 = false  
+                    rungame = true
+                end
         else
             puts "Invalid selection."
             rungame = true
@@ -179,21 +133,8 @@ system "clear"
 system "clear"
 
     while section4
-        puts ""
-        puts ""
-        puts "She replies \"What do you want from me? I do not know you!\""
-        puts "She’s a bit defensive."
-        puts ""
-        puts ""
-        puts "NEXT?"
-        puts "Do you.."
-        puts ""
-        puts ""
-        puts "(1). Introduce yourself?"
-        puts ""
-        puts "OR"
-        puts ""
-        puts "(2). Buy her a drink?"
+        section_4_message
+       
         userinput = gets.chomp.to_i
             case
             when userinput == 1
@@ -213,23 +154,18 @@ system "clear"
                 puts ""
                 puts ""
                 puts "Try again?" 
-                puts "(1) Restart" 
+                puts ""
+                puts "Type anything to restart." 
                 puts "OR"
-                puts "(2) Quit."
-                    input = gets.chomp.to_i
+                puts "(1) Quit."
+                
+                input = gets.chomp.to_i
                     case
                     when input == 1
-                        rungame = true
-    
-                    when input == 2
-                        exit = rungame = false, section3 = false, title = false
-                        # rungame = false
-                        # section1 = false
-                        # title = false
-    
+                        exit = rungame = false, section4 = false, title = false
                     else
-                        rungame = false
-                    end   
+                        rungame = true
+                    end  
                     system "clear"
                     section4 = false  
             else
@@ -243,20 +179,7 @@ system "clear"
 
 
     while section5
-        puts ""
-        puts ""
-        puts "She replies back my name is Jane with a superfriendly smile on her face."
-        puts "She’s opened up, now's the perfect time to approach her closely!" #and assert your dominance as a male."
-        puts ""
-        puts ""
-        puts "NEXT?"
-        puts "Do you.."
-        puts ""
-        puts "(1). Touch her shoulder?"
-        puts ""
-        puts "OR"
-        puts ""
-        puts "(2). Touch her leg?"
+        section_5_message
         userinput = gets.chomp.to_i
             case
             when userinput == 2
@@ -275,17 +198,17 @@ system "clear"
                 puts ""
                 puts ""
                 puts "Try again?" 
-                puts "(1) Restart" 
+                puts ""
+                puts "Type anything to restart." 
                 puts "OR"
-                puts "(2) Quit."
-                    input = gets.chomp.to_i
+                puts "(1) Quit."
+                
+                input = gets.chomp.to_i
                     case
                     when input == 1
-                        rungame = true
-                    when input == 2
-                        exit = rungame = false, section3 = false, title = false
+                        exit = rungame = false, section5 = false, title = false
                     else
-                        rungame = false
+                        rungame = true
                     end
                 system "clear"
                 section5 = false  
@@ -298,24 +221,7 @@ system "clear"
 system "clear"
 
 while section6
-    puts ""
-    puts ""
-    puts "You touch her leg and she looks surprised but intrigued."
-    puts "She replies, your hand is nice and strong"
-    puts ""
-    puts ""
-    puts "NEXT?"
-    puts "Do you ask her.."
-    puts ""
-    puts "(1). What her mother's name is?"
-    puts ""
-    puts "OR"
-    puts ""
-    puts "(2). If you can borrow $10 for an uber ride home."
-    puts ""
-    puts "OR"
-    puts ""
-    puts "(3). How many boyfriends she's had before?"
+    section_6_message
     userinput = gets.chomp.to_i
 
         case
@@ -332,21 +238,18 @@ while section6
             puts ""
             puts ""
             puts "Try again?" 
-            puts "(1) Restart" 
+            puts ""
+            puts "Type anything to restart." 
             puts "OR"
-            puts "(2) Quit."
+            puts "(1) Quit."
             
-                input = gets.chomp.to_i
+            input = gets.chomp.to_i
                 case
                 when input == 1
-                    rungame = true
-                when input == 2
                     exit = rungame = false, section6 = false, title = false
                 else
-                    rungame = false
+                    rungame = true
                 end
-                system "clear"
-                section6 = false
 
         when userinput == 2
             section7 = true
@@ -364,18 +267,17 @@ while section6
             puts ""
             puts ""
             puts "Try again?" 
-            puts "(1) Restart" 
+            puts ""
+            puts "Type anything to restart." 
             puts "OR"
-            puts "(2) Quit."
-                input = gets.chomp.to_i
+            puts "(1) Quit."
+            
+            input = gets.chomp.to_i
                 case
                 when input == 1
-                    rungame = true
-                    system "clear"
-                when input == 2
                     exit = rungame = false, section6 = false, title = false
                 else
-                    rungame = false
+                    rungame = true
                 end
                 system "clear"
                 section6 = false  
@@ -390,18 +292,7 @@ while section6
 system "clear"
 
     while section7
-        system "clear"
-        puts ""
-        puts "CONGRATUALATIONS YOU WIN!"
-        puts "Don't actually try this for obvious reasons."
-        puts ""
-        puts ""
-        puts "I am an Uber driver. Give me $10 and I'll drive you home."
-        puts ""
-        puts ""
-        puts "Would you like to play again?"
-        puts "To replay (1)"
-        puts "To quit (2)"
+        section_7_message
             replay = gets.chomp.to_i
             case
             when replay == 1
@@ -417,7 +308,7 @@ system "clear"
 system "clear"
 end 
 
-end
+# end
 
-storygame
+# storygame
 
